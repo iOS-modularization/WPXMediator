@@ -13,9 +13,9 @@ public protocol WPXMediatorTarget {
 }
 
 extension WPXMediatorTarget {
-    init() {
-        self = try! createInstance(of: Self.self) as! Self
-    }
+//    init() {
+//        self = try! createInstance(of: Self.self) as! Self
+//    }
 }
 
 final class WPXMediator {
