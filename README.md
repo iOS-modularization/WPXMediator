@@ -1,2 +1,1 @@
-# WPXMediator
-WPXMediator
+pod "WPXMediator"

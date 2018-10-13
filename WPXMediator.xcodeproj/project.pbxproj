@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AADFAF082171DC88001065EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF072171DC88001065EE /* AppDelegate.swift */; };
+		AADFAF0A2171DC88001065EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF092171DC88001065EE /* ViewController.swift */; };
+		AADFAF0D2171DC88001065EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADFAF0B2171DC88001065EE /* Main.storyboard */; };
+		AADFAF0F2171DC8B001065EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AADFAF0E2171DC8B001065EE /* Assets.xcassets */; };
+		AADFAF122171DC8B001065EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADFAF102171DC8B001065EE /* LaunchScreen.storyboard */; };
+		AADFAF1E2171DDD4001065EE /* WPXMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF1D2171DDD4001065EE /* WPXMediator.swift */; };
+		AADFAF212171DF75001065EE /* DemoTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF202171DF75001065EE /* DemoTarget.swift */; };
+		AADFAF242171DFF0001065EE /* DemoModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF232171DFF0001065EE /* DemoModule.swift */; };
+		AADFAF542171EB00001065EE /* TypeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF272171EB00001065EE /* TypeInfo.swift */; };
+		AADFAF552171EB00001065EE /* FunctionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF282171EB00001065EE /* FunctionInfo.swift */; };
+		AADFAF562171EB00001065EE /* Kind.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF292171EB00001065EE /* Kind.swift */; };
+		AADFAF572171EB00001065EE /* TypeInfoConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF2A2171EB00001065EE /* TypeInfoConvertible.swift */; };
+		AADFAF582171EB00001065EE /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF2B2171EB00001065EE /* Errors.swift */; };
+		AADFAF592171EB00001065EE /* PropertyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF2C2171EB00001065EE /* PropertyInfo.swift */; };
+		AADFAF5A2171EB00001065EE /* GetFieldAt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF2E2171EB00001065EE /* GetFieldAt.swift */; };
+		AADFAF5B2171EB00001065EE /* GettersSetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF2F2171EB00001065EE /* GettersSetters.swift */; };
+		AADFAF5C2171EB00001065EE /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF302171EB00001065EE /* String+Extensions.swift */; };
+		AADFAF5D2171EB00001065EE /* Pointer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF312171EB00001065EE /* Pointer+Extensions.swift */; };
+		AADFAF5E2171EB00001065EE /* RetainCounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF322171EB00001065EE /* RetainCounts.swift */; };
+		AADFAF5F2171EB00001065EE /* IntegerConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF332171EB00001065EE /* IntegerConvertible.swift */; };
+		AADFAF602171EB00001065EE /* MetadataLayoutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF352171EB00001065EE /* MetadataLayoutType.swift */; };
+		AADFAF612171EB00001065EE /* StructTypeDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF362171EB00001065EE /* StructTypeDescriptor.swift */; };
+		AADFAF622171EB00001065EE /* ClassMetadataLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF372171EB00001065EE /* ClassMetadataLayout.swift */; };
+		AADFAF632171EB00001065EE /* TupleMetadataLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF382171EB00001065EE /* TupleMetadataLayout.swift */; };
+		AADFAF642171EB01001065EE /* ClassHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF392171EB00001065EE /* ClassHeader.swift */; };
+		AADFAF652171EB01001065EE /* ValueWitnessTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF3A2171EB00001065EE /* ValueWitnessTable.swift */; };
+		AADFAF662171EB01001065EE /* ProtocolTypeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF3B2171EB00001065EE /* ProtocolTypeContainer.swift */; };
+		AADFAF672171EB01001065EE /* ClassTypeDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF3C2171EB00001065EE /* ClassTypeDescriptor.swift */; };
+		AADFAF682171EB01001065EE /* EnumMetadataLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF3D2171EB00001065EE /* EnumMetadataLayout.swift */; };
+		AADFAF692171EB01001065EE /* ProtocolDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF3E2171EB00001065EE /* ProtocolDescriptor.swift */; };
+		AADFAF6A2171EB01001065EE /* ExistentialContainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF3F2171EB00001065EE /* ExistentialContainter.swift */; };
+		AADFAF6B2171EB01001065EE /* ProtocolMetadataLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF402171EB00001065EE /* ProtocolMetadataLayout.swift */; };
+		AADFAF6C2171EB01001065EE /* StructMetadataLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF412171EB00001065EE /* StructMetadataLayout.swift */; };
+		AADFAF6D2171EB01001065EE /* FunctionMetadataLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF422171EB00001065EE /* FunctionMetadataLayout.swift */; };
+		AADFAF6E2171EB01001065EE /* Pointers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF442171EB00001065EE /* Pointers.swift */; };
+		AADFAF6F2171EB01001065EE /* RelativePointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF452171EB00001065EE /* RelativePointer.swift */; };
+		AADFAF702171EB01001065EE /* RelativeVectorPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF462171EB00001065EE /* RelativeVectorPointer.swift */; };
+		AADFAF712171EB01001065EE /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF472171EB00001065EE /* Vector.swift */; };
+		AADFAF722171EB01001065EE /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF492171EB00001065EE /* Metadata.swift */; };
+		AADFAF732171EB01001065EE /* TupleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF4A2171EB00001065EE /* TupleMetadata.swift */; };
+		AADFAF742171EB01001065EE /* StructMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF4B2171EB00001065EE /* StructMetadata.swift */; };
+		AADFAF752171EB01001065EE /* ClassMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF4C2171EB00001065EE /* ClassMetadata.swift */; };
+		AADFAF762171EB01001065EE /* MetadataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF4D2171EB00001065EE /* MetadataType.swift */; };
+		AADFAF772171EB01001065EE /* FuntionMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF4E2171EB00001065EE /* FuntionMetadata.swift */; };
+		AADFAF782171EB01001065EE /* ProtocolMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF4F2171EB00001065EE /* ProtocolMetadata.swift */; };
+		AADFAF792171EB01001065EE /* EnumMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF502171EB00001065EE /* EnumMetadata.swift */; };
+		AADFAF7A2171EB01001065EE /* DefaultValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF522171EB00001065EE /* DefaultValue.swift */; };
+		AADFAF7B2171EB01001065EE /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFAF532171EB00001065EE /* Factory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AADFAF042171DC88001065EE /* WPXMediator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPXMediator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AADFAF072171DC88001065EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AADFAF092171DC88001065EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AADFAF0C2171DC88001065EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AADFAF0E2171DC8B001065EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AADFAF112171DC8B001065EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AADFAF132171DC8B001065EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AADFAF1D2171DDD4001065EE /* WPXMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPXMediator.swift; sourceTree = "<group>"; };
+		AADFAF202171DF75001065EE /* DemoTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DemoTarget.swift; path = WPXMediator/DemoTarget.swift; sourceTree = SOURCE_ROOT; };
+		AADFAF232171DFF0001065EE /* DemoModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DemoModule.swift; path = WPXMediator/DemoModule.swift; sourceTree = SOURCE_ROOT; };
+		AADFAF272171EB00001065EE /* TypeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeInfo.swift; sourceTree = "<group>"; };
+		AADFAF282171EB00001065EE /* FunctionInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionInfo.swift; sourceTree = "<group>"; };
+		AADFAF292171EB00001065EE /* Kind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kind.swift; sourceTree = "<group>"; };
+		AADFAF2A2171EB00001065EE /* TypeInfoConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeInfoConvertible.swift; sourceTree = "<group>"; };
+		AADFAF2B2171EB00001065EE /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		AADFAF2C2171EB00001065EE /* PropertyInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyInfo.swift; sourceTree = "<group>"; };
+		AADFAF2E2171EB00001065EE /* GetFieldAt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetFieldAt.swift; sourceTree = "<group>"; };
+		AADFAF2F2171EB00001065EE /* GettersSetters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GettersSetters.swift; sourceTree = "<group>"; };
+		AADFAF302171EB00001065EE /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		AADFAF312171EB00001065EE /* Pointer+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pointer+Extensions.swift"; sourceTree = "<group>"; };
+		AADFAF322171EB00001065EE /* RetainCounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetainCounts.swift; sourceTree = "<group>"; };
+		AADFAF332171EB00001065EE /* IntegerConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerConvertible.swift; sourceTree = "<group>"; };
+		AADFAF352171EB00001065EE /* MetadataLayoutType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetadataLayoutType.swift; sourceTree = "<group>"; };
+		AADFAF362171EB00001065EE /* StructTypeDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructTypeDescriptor.swift; sourceTree = "<group>"; };
+		AADFAF372171EB00001065EE /* ClassMetadataLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassMetadataLayout.swift; sourceTree = "<group>"; };
+		AADFAF382171EB00001065EE /* TupleMetadataLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TupleMetadataLayout.swift; sourceTree = "<group>"; };
+		AADFAF392171EB00001065EE /* ClassHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassHeader.swift; sourceTree = "<group>"; };
+		AADFAF3A2171EB00001065EE /* ValueWitnessTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueWitnessTable.swift; sourceTree = "<group>"; };
+		AADFAF3B2171EB00001065EE /* ProtocolTypeContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolTypeContainer.swift; sourceTree = "<group>"; };
+		AADFAF3C2171EB00001065EE /* ClassTypeDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassTypeDescriptor.swift; sourceTree = "<group>"; };
+		AADFAF3D2171EB00001065EE /* EnumMetadataLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumMetadataLayout.swift; sourceTree = "<group>"; };
+		AADFAF3E2171EB00001065EE /* ProtocolDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolDescriptor.swift; sourceTree = "<group>"; };
+		AADFAF3F2171EB00001065EE /* ExistentialContainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistentialContainter.swift; sourceTree = "<group>"; };
+		AADFAF402171EB00001065EE /* ProtocolMetadataLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolMetadataLayout.swift; sourceTree = "<group>"; };
+		AADFAF412171EB00001065EE /* StructMetadataLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructMetadataLayout.swift; sourceTree = "<group>"; };
+		AADFAF422171EB00001065EE /* FunctionMetadataLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionMetadataLayout.swift; sourceTree = "<group>"; };
+		AADFAF442171EB00001065EE /* Pointers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pointers.swift; sourceTree = "<group>"; };
+		AADFAF452171EB00001065EE /* RelativePointer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelativePointer.swift; sourceTree = "<group>"; };
+		AADFAF462171EB00001065EE /* RelativeVectorPointer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelativeVectorPointer.swift; sourceTree = "<group>"; };
+		AADFAF472171EB00001065EE /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		AADFAF492171EB00001065EE /* Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
+		AADFAF4A2171EB00001065EE /* TupleMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TupleMetadata.swift; sourceTree = "<group>"; };
+		AADFAF4B2171EB00001065EE /* StructMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructMetadata.swift; sourceTree = "<group>"; };
+		AADFAF4C2171EB00001065EE /* ClassMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassMetadata.swift; sourceTree = "<group>"; };
+		AADFAF4D2171EB00001065EE /* MetadataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetadataType.swift; sourceTree = "<group>"; };
+		AADFAF4E2171EB00001065EE /* FuntionMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuntionMetadata.swift; sourceTree = "<group>"; };
+		AADFAF4F2171EB00001065EE /* ProtocolMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolMetadata.swift; sourceTree = "<group>"; };
+		AADFAF502171EB00001065EE /* EnumMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumMetadata.swift; sourceTree = "<group>"; };
+		AADFAF522171EB00001065EE /* DefaultValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultValue.swift; sourceTree = "<group>"; };
+		AADFAF532171EB00001065EE /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AADFAF012171DC88001065EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AADFAEFB2171DC88001065EE = {
+			isa = PBXGroup;
+			children = (
+				AADFAF062171DC88001065EE /* WPXMediator */,
+				AADFAF052171DC88001065EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AADFAF052171DC88001065EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AADFAF042171DC88001065EE /* WPXMediator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AADFAF062171DC88001065EE /* WPXMediator */ = {
+			isa = PBXGroup;
+			children = (
+				AADFAF252171EB00001065EE /* Reflection */,
+				AADFAF222171DFD8001065EE /* DemoModule */,
+				AADFAF1F2171DF5A001065EE /* DemoTarget */,
+				AADFAF1C2171DDD4001065EE /* WPXMediator */,
+				AADFAF072171DC88001065EE /* AppDelegate.swift */,
+				AADFAF092171DC88001065EE /* ViewController.swift */,
+				AADFAF0B2171DC88001065EE /* Main.storyboard */,
+				AADFAF0E2171DC8B001065EE /* Assets.xcassets */,
+				AADFAF102171DC8B001065EE /* LaunchScreen.storyboard */,
+				AADFAF132171DC8B001065EE /* Info.plist */,
+			);
+			path = WPXMediator;
+			sourceTree = "<group>";
+		};
+		AADFAF1C2171DDD4001065EE /* WPXMediator */ = {
+			isa = PBXGroup;
+			children = (
+				AADFAF1D2171DDD4001065EE /* WPXMediator.swift */,
+			);
+			path = WPXMediator;
+			sourceTree = "<group>";
+		};
+		AADFAF1F2171DF5A001065EE /* DemoTarget */ = {
+			isa = PBXGroup;
+			children = (
+				AADFAF202171DF75001065EE /* DemoTarget.swift */,
+			);
+			name = DemoTarget;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		AADFAF222171DFD8001065EE /* DemoModule */ = {
+			isa = PBXGroup;
+			children = (
+				AADFAF232171DFF0001065EE /* DemoModule.swift */,
+			);
+			name = DemoModule;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		AADFAF252171EB00001065EE /* Reflection */ = {
+			isa = PBXGroup;
+			children = (
+				AADFAF262171EB00001065EE /* Models */,
+				AADFAF2D2171EB00001065EE /* Utilities */,
+				AADFAF342171EB00001065EE /* Layouts */,
+				AADFAF432171EB00001065EE /* Pointers */,
+				AADFAF482171EB00001065EE /* Metadata */,
+				AADFAF512171EB00001065EE /* Factory */,
+			);
+			path = Reflection;
+			sourceTree = "<group>";
+		};
+		AADFAF262171EB00001065EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AADFAF272171EB00001065EE /* TypeInfo.swift */,
+				AADFAF282171EB00001065EE /* FunctionInfo.swift */,
+				AADFAF292171EB00001065EE /* Kind.swift */,
+				AADFAF2A2171EB00001065EE /* TypeInfoConvertible.swift */,
+				AADFAF2B2171EB00001065EE /* Errors.swift */,
+				AADFAF2C2171EB00001065EE /* PropertyInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AADFAF2D2171EB00001065EE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AADFAF2E2171EB00001065EE /* GetFieldAt.swift */,
+				AADFAF2F2171EB00001065EE /* GettersSetters.swift */,
+				AADFAF302171EB00001065EE /* String+Extensions.swift */,
+				AADFAF312171EB00001065EE /* Pointer+Extensions.swift */,
+				AADFAF322171EB00001065EE /* RetainCounts.swift */,
+				AADFAF332171EB00001065EE /* IntegerConvertible.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AADFAF342171EB00001065EE /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				AADFAF352171EB00001065EE /* MetadataLayoutType.swift */,
+				AADFAF362171EB00001065EE /* StructTypeDescriptor.swift */,
+				AADFAF372171EB00001065EE /* ClassMetadataLayout.swift */,
+				AADFAF382171EB00001065EE /* TupleMetadataLayout.swift */,
+				AADFAF392171EB00001065EE /* ClassHeader.swift */,
+				AADFAF3A2171EB00001065EE /* ValueWitnessTable.swift */,
+				AADFAF3B2171EB00001065EE /* ProtocolTypeContainer.swift */,
+				AADFAF3C2171EB00001065EE /* ClassTypeDescriptor.swift */,
+				AADFAF3D2171EB00001065EE /* EnumMetadataLayout.swift */,
+				AADFAF3E2171EB00001065EE /* ProtocolDescriptor.swift */,
+				AADFAF3F2171EB00001065EE /* ExistentialContainter.swift */,
+				AADFAF402171EB00001065EE /* ProtocolMetadataLayout.swift */,
+				AADFAF412171EB00001065EE /* StructMetadataLayout.swift */,
+				AADFAF422171EB00001065EE /* FunctionMetadataLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		AADFAF432171EB00001065EE /* Pointers */ = {
+			isa = PBXGroup;
+			children = (
+				AADFAF442171EB00001065EE /* Pointers.swift */,
+				AADFAF452171EB00001065EE /* RelativePointer.swift */,
+				AADFAF462171EB00001065EE /* RelativeVectorPointer.swift */,
+				AADFAF472171EB00001065EE /* Vector.swift */,
+			);
+			path = Pointers;
+			sourceTree = "<group>";
+		};
+		AADFAF482171EB00001065EE /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				AADFAF492171EB00001065EE /* Metadata.swift */,
+				AADFAF4A2171EB00001065EE /* TupleMetadata.swift */,
+				AADFAF4B2171EB00001065EE /* StructMetadata.swift */,
+				AADFAF4C2171EB00001065EE /* ClassMetadata.swift */,
+				AADFAF4D2171EB00001065EE /* MetadataType.swift */,
+				AADFAF4E2171EB00001065EE /* FuntionMetadata.swift */,
+				AADFAF4F2171EB00001065EE /* ProtocolMetadata.swift */,
+				AADFAF502171EB00001065EE /* EnumMetadata.swift */,
+			);
+			path = Metadata;
+			sourceTree = "<group>";
+		};
+		AADFAF512171EB00001065EE /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				AADFAF522171EB00001065EE /* DefaultValue.swift */,
+				AADFAF532171EB00001065EE /* Factory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AADFAF032171DC88001065EE /* WPXMediator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AADFAF162171DC8B001065EE /* Build configuration list for PBXNativeTarget "WPXMediator" */;
+			buildPhases = (
+				AADFAF002171DC88001065EE /* Sources */,
+				AADFAF012171DC88001065EE /* Frameworks */,
+				AADFAF022171DC88001065EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WPXMediator;
+			productName = WPXMediator;
+			productReference = AADFAF042171DC88001065EE /* WPXMediator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AADFAEFC2171DC88001065EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "葬花桥";
+				TargetAttributes = {
+					AADFAF032171DC88001065EE = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = AADFAEFF2171DC88001065EE /* Build configuration list for PBXProject "WPXMediator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AADFAEFB2171DC88001065EE;
+			productRefGroup = AADFAF052171DC88001065EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AADFAF032171DC88001065EE /* WPXMediator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AADFAF022171DC88001065EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AADFAF122171DC8B001065EE /* LaunchScreen.storyboard in Resources */,
+				AADFAF0F2171DC8B001065EE /* Assets.xcassets in Resources */,
+				AADFAF0D2171DC88001065EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AADFAF002171DC88001065EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AADFAF652171EB01001065EE /* ValueWitnessTable.swift in Sources */,
+				AADFAF552171EB00001065EE /* FunctionInfo.swift in Sources */,
+				AADFAF672171EB01001065EE /* ClassTypeDescriptor.swift in Sources */,
+				AADFAF1E2171DDD4001065EE /* WPXMediator.swift in Sources */,
+				AADFAF732171EB01001065EE /* TupleMetadata.swift in Sources */,
+				AADFAF542171EB00001065EE /* TypeInfo.swift in Sources */,
+				AADFAF562171EB00001065EE /* Kind.swift in Sources */,
+				AADFAF6D2171EB01001065EE /* FunctionMetadataLayout.swift in Sources */,
+				AADFAF5A2171EB00001065EE /* GetFieldAt.swift in Sources */,
+				AADFAF242171DFF0001065EE /* DemoModule.swift in Sources */,
+				AADFAF572171EB00001065EE /* TypeInfoConvertible.swift in Sources */,
+				AADFAF6F2171EB01001065EE /* RelativePointer.swift in Sources */,
+				AADFAF792171EB01001065EE /* EnumMetadata.swift in Sources */,
+				AADFAF582171EB00001065EE /* Errors.swift in Sources */,
+				AADFAF7B2171EB01001065EE /* Factory.swift in Sources */,
+				AADFAF602171EB00001065EE /* MetadataLayoutType.swift in Sources */,
+				AADFAF6A2171EB01001065EE /* ExistentialContainter.swift in Sources */,
+				AADFAF752171EB01001065EE /* ClassMetadata.swift in Sources */,
+				AADFAF622171EB00001065EE /* ClassMetadataLayout.swift in Sources */,
+				AADFAF5C2171EB00001065EE /* String+Extensions.swift in Sources */,
+				AADFAF0A2171DC88001065EE /* ViewController.swift in Sources */,
+				AADFAF712171EB01001065EE /* Vector.swift in Sources */,
+				AADFAF772171EB01001065EE /* FuntionMetadata.swift in Sources */,
+				AADFAF082171DC88001065EE /* AppDelegate.swift in Sources */,
+				AADFAF612171EB00001065EE /* StructTypeDescriptor.swift in Sources */,
+				AADFAF592171EB00001065EE /* PropertyInfo.swift in Sources */,
+				AADFAF6B2171EB01001065EE /* ProtocolMetadataLayout.swift in Sources */,
+				AADFAF762171EB01001065EE /* MetadataType.swift in Sources */,
+				AADFAF682171EB01001065EE /* EnumMetadataLayout.swift in Sources */,
+				AADFAF5E2171EB00001065EE /* RetainCounts.swift in Sources */,
+				AADFAF742171EB01001065EE /* StructMetadata.swift in Sources */,
+				AADFAF5D2171EB00001065EE /* Pointer+Extensions.swift in Sources */,
+				AADFAF7A2171EB01001065EE /* DefaultValue.swift in Sources */,
+				AADFAF5F2171EB00001065EE /* IntegerConvertible.swift in Sources */,
+				AADFAF5B2171EB00001065EE /* GettersSetters.swift in Sources */,
+				AADFAF692171EB01001065EE /* ProtocolDescriptor.swift in Sources */,
+				AADFAF6C2171EB01001065EE /* StructMetadataLayout.swift in Sources */,
+				AADFAF782171EB01001065EE /* ProtocolMetadata.swift in Sources */,
+				AADFAF632171EB00001065EE /* TupleMetadataLayout.swift in Sources */,
+				AADFAF662171EB01001065EE /* ProtocolTypeContainer.swift in Sources */,
+				AADFAF702171EB01001065EE /* RelativeVectorPointer.swift in Sources */,
+				AADFAF6E2171EB01001065EE /* Pointers.swift in Sources */,
+				AADFAF212171DF75001065EE /* DemoTarget.swift in Sources */,
+				AADFAF722171EB01001065EE /* Metadata.swift in Sources */,
+				AADFAF642171EB01001065EE /* ClassHeader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AADFAF0B2171DC88001065EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AADFAF0C2171DC88001065EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AADFAF102171DC8B001065EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AADFAF112171DC8B001065EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AADFAF142171DC8B001065EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AADFAF152171DC8B001065EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AADFAF172171DC8B001065EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WPXMediator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jyall.WPXMediator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AADFAF182171DC8B001065EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WPXMediator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jyall.WPXMediator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AADFAEFF2171DC88001065EE /* Build configuration list for PBXProject "WPXMediator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AADFAF142171DC8B001065EE /* Debug */,
+				AADFAF152171DC8B001065EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AADFAF162171DC8B001065EE /* Build configuration list for PBXNativeTarget "WPXMediator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AADFAF172171DC8B001065EE /* Debug */,
+				AADFAF182171DC8B001065EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AADFAEFC2171DC88001065EE /* Project object */;
+}
