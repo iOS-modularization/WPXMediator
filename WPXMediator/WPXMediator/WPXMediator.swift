@@ -18,14 +18,14 @@ extension WPXMediatorTarget {
 //    }
 }
 
-final class WPXMediator {
+public final class WPXMediator {
     static let shared = WPXMediator()
     
-    func perform(action url: URL, completion: ([String: Any]) -> Void) {
+    public func perform(action url: URL, completion: ([String: Any]) -> Void) {
         
     }
     
-    func perform(target name: String, action: String, params: [String: Any]? = nil, isCache: Bool = false) -> Any? {
+    public func perform(target name: String, action: String, params: [String: Any]? = nil, isCache: Bool = false) -> Any? {
         if let cls = NSClassFromString("WPXMediator." + name), let targetType = cls.self as? WPXMediatorTarget.Type {
 
             let targetObject = targetType.init()
